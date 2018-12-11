@@ -4,7 +4,7 @@ import by.bntu.fitr.povt.justcompileit.javalabs.lab09.taska.view.Printer;
 import java.util.Scanner;
 public class UserInput {
     public static Scanner scanner = new Scanner(System.in);
-    public static String ERROR_MESSAGE = "Wrong type of data. Please input integer value...";
+    public static final String ERROR_MESSAGE = "Wrong type of data. Please input integer value...\n";
     public static int nextInt(String msg){
         Printer.print(msg);
         if (scanner.hasNextInt()) {
