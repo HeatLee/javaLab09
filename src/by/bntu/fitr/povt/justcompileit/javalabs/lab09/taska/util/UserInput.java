@@ -1,0 +1,23 @@
+package by.bntu.fitr.povt.justcompileit.javalabs.lab09.taska.util;
+
+import by.bntu.fitr.povt.justcompileit.javalabs.lab09.taska.view.Printer;
+import java.util.Scanner;
+public class UserInput {
+    public static Scanner scanner = new Scanner(System.in);
+    public static String ERROR_MESSAGE = "Wrong type of data. Please input integer value...";
+    public static int nextInt(String msg){
+        Printer.print(msg);
+        if (scanner.hasNextInt()) {
+            return scanner.nextInt();
+        } else {
+            Printer.print(ERROR_MESSAGE);
+            scanner.nextLine();
+            return nextInt(msg);
+        }
+    }
+
+    public static char nextChar(String msg){
+        Printer.print(msg);
+        return scanner.next().charAt(0);
+    }
+}
