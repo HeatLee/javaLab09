@@ -1,6 +1,5 @@
 package by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.controller;
 
-
 import by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.view.Printer;
 import by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.util.Choise;
 import by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.util.UserInput;
