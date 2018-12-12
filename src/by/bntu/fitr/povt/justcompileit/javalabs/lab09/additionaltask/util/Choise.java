@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.justcompileit.javalabs.lab09.taska.util;
+package by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.util;
 
 import by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.view.Printer;
 
@@ -11,7 +11,7 @@ public class Choise {
 
     public static int chooseMenuItem(int amountOfItems) {
         int item = UserInput.nextInt(INPUT_MESSAGE_1) - 1;
-        if (item > amountOfItems || item <= 0) {
+        if (item >= amountOfItems || item < 0) {
             System.out.print(ERROR_MESSAGE_1);
             return chooseMenuItem(amountOfItems);
         }

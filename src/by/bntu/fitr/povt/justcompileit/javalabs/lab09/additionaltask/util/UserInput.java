@@ -1,9 +1,7 @@
-package by.bntu.fitr.povt.justcompileit.javalabs.lab09.taska.util;
+package by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.util;
 
 import by.bntu.fitr.povt.justcompileit.javalabs.lab09.additionaltask.view.Printer;
-
 import java.util.Scanner;
-
 public class UserInput {
     public static Scanner scanner = new Scanner(System.in);
     public static final String ERROR_MESSAGE = "Wrong type of data. Please input integer value...\n";
